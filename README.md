@@ -4,11 +4,13 @@
 
 ## サンプルコードの説明
 
-src フォルダ以下にそれぞれのカスタム一覧に利用するソースコードを配置しています。Ignite UI の基本的な利用方法はデモアプリの確認は以下の Cybozu Developer Network 掲載記事 をご確認下さい。
+src フォルダ以下にトピック毎に利用するソースコードを管理しています。また、各 Javascript/CSS ファイルのの配置については、src 下の各フォルダ内の ファイル配置.md をご確認ください。
+
+※ Ignite UI の基本的な利用方法はデモアプリの確認は以下の Cybozu Developer Network 掲載記事 をご確認下さい。
 
 - [Cybozu Developer Network: Ignite UI について](https://developer.cybozu.io/hc/ja/articles/206306286-Ignite-UI-%E3%82%A4%E3%83%B3%E3%83%95%E3%83%A9%E3%82%B8%E3%82%B9%E3%83%86%E3%82%A3%E3%83%83%E3%82%AF%E3%82%B9-%E3%82%B8%E3%83%A3%E3%83%91%E3%83%B3%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE-)
 
-また、各 Javascript/CSS ファイルのの配置については、src 下の各フォルダ内の ファイル配置.md をご確認ください。
+
 
 <br>
 
