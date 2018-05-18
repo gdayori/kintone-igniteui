@@ -1,0 +1,32 @@
+.ocean-portal-widget.ui-igtile-inner-container {
+    overflow: scroll !important;
+}
+.ui-state-hover a{
+    color: #444 !important;
+}
+.ig-layout-item.ui-widget-content.ui-state-hover {
+    background: rgb(85, 223, 251) !important;
+}
+.ui-igtile-minimized {
+    cursor: inherit !important;
+    font-size: inherit !important;
+}
+
+.ui-igtile-maximized ul.gaia-argoui-appscrollinglist-list > li {
+    min-width: 33% !important;
+    float: left !important;
+}
+.ig-tile-minimize-button{
+    position: relative !important;
+}
+
+.appSearchBox{
+    float: right;
+    position: relative;
+    margin-top: -35px;
+    margin-right: 40px;
+}
+
+.gaia-argoui-appscrollinglist-list li.hiddenApp{
+    display:none;
+}
