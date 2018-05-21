@@ -30,3 +30,12 @@
 .gaia-argoui-appscrollinglist-list li.hiddenApp{
     display:none;
 }
+
+/* igDataChart tooltip */
+.ui-chart-pointer-tooltip-container {
+    z-index: 9999;
+}
+.chart-in-tile{
+    width: 100% !important;
+    height: 100% !important;
+}
