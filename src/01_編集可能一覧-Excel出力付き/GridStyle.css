@@ -1,0 +1,30 @@
+.ui-iggrid table tbody td {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  -webkit-text-overflow: ellipsis; /* Safari */
+  -o-text-overflow: ellipsis; /* Opera */
+}
+.numberCell{
+    text-align: right;
+}
+#grid_container > .ui-widget-header{
+    background: #F3F3F3;
+}
+
+#ui-datepicker-div.ui-igedit-dropdown{
+    z-index: 10000 !important;
+}
+.button-normal{
+    background: #EEE;
+    padding: 2px 10px;
+    border: 2px solid #CCC;
+    text-decoration: none;
+    color: #000!important;
+    border-radius: 3px;
+    -webkit-transition: all 0.3s ease;
+}
+.button-normal:hover {        
+    border: 2px solid #06c;
+    background: #06c;
+    color: #fff!important;
+}
