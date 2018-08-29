@@ -5,12 +5,8 @@
             return;
         }
 
-        console.log("変換前");
-        console.log(event.records);
         //データ取得
         var jsonData = createJsonDatasetsFromKintoneRecords(event.records);
-        console.log("変換後");
-        console.log(jsonData);
 
         //グリッド生成
         $("#grid").igGrid({
