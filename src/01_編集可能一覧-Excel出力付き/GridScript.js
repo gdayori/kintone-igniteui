@@ -23,11 +23,11 @@
             columns: [
                 { headerText: "__id", key: "__id", dataType: "number", hidden: true, width:"80px" },
                 { headerText: "__revision", key: "__revision", dataType: "number", hidden: true, width:"80px" },
-                { headerText: "会社名", key: "会社名", dataType: "string", width:"200px" },
-                { headerText: "先方担当者名", key: "先方担当者名", dataType: "string", width:"150px" },
-                { headerText: "TEL", key: "TEL", dataType: "string", width:"150px" },
-                { headerText: "FAX", key: "FAX", dataType: "string", width:"150px" },
-                { headerText: "メールアドレス", key: "メールアドレス", dataType: "string", width:"170px" },
+                { headerText: "会社名", key: "会社名", dataType: "string", width:"200px", formatter: sanitaize.encode },
+                { headerText: "先方担当者名", key: "先方担当者名", dataType: "string", width:"150px", formatter: sanitaize.encode },
+                { headerText: "TEL", key: "TEL", dataType: "string", width:"150px", formatter: sanitaize.encode },
+                { headerText: "FAX", key: "FAX", dataType: "string", width:"150px", formatter: sanitaize.encode },
+                { headerText: "メールアドレス", key: "メールアドレス", dataType: "string", width:"170px", formatter: sanitaize.encode },
                 { headerText: "見込み時期", key: "見込み時期", dataType: "date", width:"150px", format:"yyyy-MM-dd" },
                 { headerText: "案件担当者", key: "案件担当者", dataType: "string", width:"150px", hidden: true },
                 { headerText: "緯度", key: "緯度", dataType: "string", width:"150px", hidden: true },
@@ -179,3 +179,14 @@
     function exportExcel(){
         $.ig.GridExcelExporter.export($("#grid"), {fileName: "案件一覧"});
     }
+
+    //サニタイズ(HTML Encoding)の処理
+    sanitaize = {
+      encode : function (str) {
+        return str.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#39;');
+      },
+
+      decode : function (str) {
+        return str.replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&quot;/g, '"').replace(/&#39;/g, '\'').replace(/&amp;/g, '&');
+      }
+    };
